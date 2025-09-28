@@ -1,0 +1,22 @@
+@import "../variables.css";
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  z-index: 5; /* Low but still above zero to establish stacking context */
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--text-gray);
+  font-style: italic;
+}
+
+/* This ensures modals appear above everything else */
+.task-viewer-container,
+.task-editor-container {
+  z-index: 1000; /* Higher than all other elements */
+}

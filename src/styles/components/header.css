@@ -1,0 +1,36 @@
+@import "../variables.css";
+
+.header {
+  padding: 25px 30px 15px;
+}
+
+.header-title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.header-underline {
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 15px 10px;
+  }
+
+  .header-title {
+    font-size: 32px;
+  }
+}
